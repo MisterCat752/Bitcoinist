@@ -1,20 +1,39 @@
 import React from 'react';
-import { Container } from './shared';
+import { Container, GradientBall } from './shared';
 
-function Hero() {
+export function Hero() {
   return (
-    <div className='relative overflow-hidden min-h-[950px]'>
+    <div className='relative overflow-hidden min-h-[950px] bg-main'>
       {/* Сетка на фоне */}
       <div
         className='
     absolute inset-0 z-0  
-    bg-[#111319]
+    bg-main
     bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,0.08)_1px,transparent_1px)]
     bg-[size:48px_48px]
     pointer-events-none
     [transform:perspective(600px)_rotateX(73deg)]  '
       />
-
+      <GradientBall
+        size={54}
+        gradient='linear-gradient(150deg, #C7FFF0 24%, #38B2AC 100%)'
+        className='absolute bottom-4 left-6'
+      />
+      <GradientBall
+        size={54}
+        gradient='linear-gradient(150deg, #C7FFF0 24%, #38B2AC 100%)'
+        className='absolute bottom-30 right-30'
+      />
+      <GradientBall
+        size={30}
+        gradient='linear-gradient(180deg, #FFC371 0%, #FF8008 100%)'
+        className='absolute top-30 right-30 '
+      />
+      <GradientBall
+        size={30}
+        gradient='linear-gradient(180deg, #FFC371 0%, #FF8008 100%)'
+        className='absolute top-30 left-30 '
+      />
       <Container className='relative z-10'>
         <h1 className='text-white text-[62px] font-bold'>BITCOINIST.ORG</h1>
 
@@ -48,5 +67,3 @@ function Hero() {
     </div>
   );
 }
-
-export default Hero;

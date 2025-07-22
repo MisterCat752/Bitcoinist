@@ -1,10 +1,11 @@
 import React from 'react';
-import Hero from './components/Hero';
+import { Hero, MessengerInfo } from './components';
 
 function App() {
   return (
-    <div>
+    <div className='bg-main'>
       <Hero />
+      <MessengerInfo />
     </div>
   );
 }
