@@ -1,5 +1,10 @@
 import React from 'react';
-import { Hero, MatrixProtocol, MessengerInfo } from './components';
+import {
+  BitcoinistServer,
+  Hero,
+  MatrixProtocol,
+  MessengerInfo,
+} from './components';
 
 function App() {
   return (
@@ -7,6 +12,7 @@ function App() {
       <Hero />
       <MessengerInfo />
       <MatrixProtocol />
+      <BitcoinistServer />
     </div>
   );
 }
