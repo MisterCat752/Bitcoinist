@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+--color-main: #030712;
+--color-gray: #1e2939;
+--color-white-light: #9ca3af;
+--color-gray-light: #9ca3af;
+--color-gray-medium: #364153;
+--color-gray-extramedium: #1e2939;
+--color-gray-dark: #101828;
+--color-black-light: #0F172A;
+--color-blue:#003a7c;
+--color-blue-dark:#103157;
+--color-blue-medium:#1447e6;
+--color-blue-light:#1d5da5;
+--color-red-medium:#fb2c36;
+--color-black:black;
+--color-green:#016630;
+}
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(223, 203, 203, 0.87);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scroll-hidden { 
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari, Edge */
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+
+#map,
+.leaflet-container {
+  z-index: 0 !important;
+}
+.leaflet-control {
+  z-index: 1 !important;
+}
